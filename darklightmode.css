@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  
+  label{
+      position: absolute;
+      width: 45px;
+      height: 22px;
+      right: 20px;
+      top: 20px;
+      border: 8px solid;
+      border-radius: 90px;
+  }
+  label:before{
+      position: absolute;
+      content: '';
+      width:20px;
+      height: 20px;
+      left: 1px;
+      top: 1px;
+      border-radius: 90%;
+      background: #000;
+      cursor: pointer;
+      transition: 0.4s;
+  }
+  label.active:before{
+      left: 24px;
+      background: #fff;
+  }
+  body.night{
+      background: #000;
+      color: #fff;
+  }
+  @media screen and (min-width:900px) {
+    .respon{
+      display: flex;
+    }
+    img{
+      height:60%;
+      width:auto;
+      padding-top: 2vh;
+      padding-right: 5%;
+    }
+    p{
+      max-width: 80%;
+      line-height: 30px;
+    }
+  }
+  img{
+      width:60%;
+      height:auto;
+    }
+    p{
+      text-align: justify;
+      font-size: 18px;}
+    
